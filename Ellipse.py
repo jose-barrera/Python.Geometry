@@ -151,11 +151,11 @@ class Ellipse:
                     self.__covertex1 = Point(center.x - semiminor_axis, center.y)
                     self.__covertex2 = Point(center.x + semiminor_axis, center.y)
                 else:
-                    raise (ValueError("ERR: Orientation is invalid."))
+                    raise ValueError("ERR: Orientation is invalid.")
             else:
-                raise (ValueError("ERR: Semi-major axis cannot be equal or smaller than semi-minor axis."))
+                raise ValueError("ERR: Semi-major axis cannot be equal or smaller than semi-minor axis.")
         else:
-            raise (ValueError("ERR: Semi-axes cannot be zero or negative."))
+            raise ValueError("ERR: Semi-axes cannot be zero or negative.")
 
     # endregion
 
@@ -224,6 +224,6 @@ class Ellipse:
                 self.__covertex1 = Point(self.__center.x - self.__semiminor_axis, self.__center.y)
                 self.__covertex2 = Point(self.__center.x + self.__semiminor_axis, self.__center.y)
         else:
-            raise (ValueError("ERR: Factor cannot be zero or negative."))
+            raise ValueError("ERR: Factor cannot be zero or negative.")
 
     # endregion

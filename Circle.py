@@ -81,7 +81,7 @@ class Circle:
             self.__area = math.pi * radius * radius
             self.__perimeter = math.pi * 2 * radius
         else:
-            raise(ValueError("ERR: Radius cannot be zero or negative."))
+            raise ValueError("ERR: Radius cannot be zero or negative.")
 
     # endregion
     
@@ -100,7 +100,7 @@ class Circle:
         elif center is not None and dx is None and dy is None:
             self.__center = center
         else:
-            raise(ValueError("ERR: Arguments are incorrect."))
+            raise ValueError("ERR: Arguments are incorrect.")
 
     # Changes the size of circle by setting a new radius.
     def resize(self, radius):
@@ -116,6 +116,6 @@ class Circle:
             self.__area = math.pi * radius * radius
             self.__perimeter = math.pi * 2 * radius
         else:
-            raise (ValueError("ERR: Radius cannot be zero or negative."))
+            raise ValueError("ERR: Radius cannot be zero or negative.")
 
     # endregion

@@ -105,7 +105,7 @@ class RegularHeptagon:
             # Calculates area (half the product of its perimeter and its apothem).
             self.__area = self.__perimeter * self.__apothem / 2
         else:
-            raise(ValueError("ERR: Center and vertex cannot be the same point."))
+            raise ValueError("ERR: Center and vertex cannot be the same point.")
 
     # endregion
 
